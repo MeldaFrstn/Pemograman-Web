@@ -1,0 +1,354 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /*membuat layar-dalam*/
+  .layar-dalam {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    size: 200px;
+  }
+
+  .logo img{
+    width: 60px;
+    height: 50px;
+  }
+  /*membuat cover*/
+  .layar-penuh{
+    width: 100%;
+}
+  
+  /*mengatur navigasi*/
+  nav {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #6E93CA;
+    line-height: 600px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+  }
+
+  nav.putih {
+    background-color: #6E93CA;
+  }
+  nav .logo {
+    float: left;
+    position: relative;
+    line-height: 100px;
+    text-align: center;
+  }
+  nav {
+    vertical-align: middle;
+    width: 120px;
+  }
+  
+  /*mengatur menu*/
+  nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+  }
+  
+  nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+  }
+  
+  nav ul li a {
+    color: #6E93CA;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #ffff;
+  }
+  
+  /* pengaturan header */
+  header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+  }
+  header .intro {
+    z-index: 100;
+    color: #6E93CA;
+    text-align: center;
+    position: relative;
+    top: 100%;
+  }
+  header .intro h3 {
+    font-size: 1000px;
+    margin: 0;
+    padding: 0;
+  }
+  .tombol {
+    background-color: #6E93CA;
+    height: 40px;
+    line-height: 42px;
+    color: #6E93CA;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    font-size: 15px;
+    border-radius: 3px;
+  }
+  header .overlay {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    height: 1000%;
+    width: 1000%;
+    background-color: #ffff;
+    opacity: 1000%;
+    z-index: -2;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  .tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+  .tombol-menu .garis {
+    height: 3px;
+    background-color: #6E93CA;
+  }
+  section {
+    padding: 50px 0px 50px 0px;
+  }
+  section h3 {
+    font-size: 30px;
+  }
+  section h3::after {
+    content: "";
+    border-bottom: 5px solid #6E93CA;
+    width: 52px;
+    display: flex;
+    margin: 20px auto;
+  }
+  #program,
+  #blog {
+    text-align: center;
+  }
+  section p.ringkasan {
+    font-style: italic;
+    font-size: 18px;
+    color: #ababab;
+  }
+  section .konten-isi p {
+    font-style: normal;
+  }
+  nav.putih {
+    background-color: #fff;
+  }
+  nav.putih .tombol-menu .garis {
+    background-color: #;
+  }
+  nav.putih ul li a {
+    color: #6E93CA;
+  }
+  nav .logo img.hitam {
+    display: none;
+  }
+  section.abuabu {
+    background-color: #f5f6f6;
+  }
+
+  /*membuat support*/
+  .support,
+  .tim,
+  .blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .support h6,
+  .tim h6 {
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    font-size: 10px;
+    font-weight: bold;
+    color:#6E93CA;
+  }
+
+  #program-edukasi h6:hover {
+    padding: 0;
+    margin: 0;
+    line-height: 30px;
+    background: #6E93CA;
+    color: #f9f9f9; 
+  }
+
+  .support img {
+    width: 300px;
+  }
+  .support div,
+  .tim div {
+    text-align: center;
+    width: 27%;
+  }
+  
+/*membuat caption*/
+  section.quote {
+    background: url("asset/background-bromo.jpg") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    padding: 100px;
+  }
+  section.quote .layar-dalam p {
+    display: inline;
+    background: url("asset/quote-icon.png") no-repeat;
+    padding: 40px;
+  }
+  .tim img {
+    width: 100%;
+    box-shadow: 0px -10px 30px #ccc;
+    border-radius: 5px;
+  }
+  .blog .area {
+    width: 47%;
+    box-shadow: 0px -10px 30px #001f4d;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .blog div.area div {
+    width: 50%;
+  }
+  .blog .area .gambar {
+    border-radius: 20px 0px 0px 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-bottom: 1px solid #6E93CA;
+  }
+  .blog .area .text article {
+    padding: 40px;
+  }
+  .blog .area .text article h4 {
+    margin: 0px;
+  }
+  .blog .area .text article a {
+    color: #6E93CA;
+    text-decoration: none;
+    transition: color 0.5s ease;
+  }
+  .blog .area .text article a:hover {
+    color: #ccc;
+  }
+  footer {
+    padding: 40px 0px 40px 0px;
+    background-color: #001f4d;
+    color: #fff;
+    margin-top: 15vh;
+  }
+  footer .layar-dalam {
+    display: flex;
+  }
+  footer .layar-dalam div {
+    width: 100%;
+  }
+  footer .layar-dalam h5 {
+    margin-top: 1px;
+    font-size: 100px;
+    font-weight: bold;
+  }
+  footer .layar-dalam .copyright {
+    width: 1000%;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  footer .layar-dalam .idpembuat {
+    width: 100%;
+    margin-top: 0,5px;
+    padding-top: 10px;
+    text-align: middle;
+  }
+
+  
+  @media screen and (max-width: 991.98px) {
+    .layar-dalam {
+      width: 100%;
+    }
+    nav .menu ul {
+      display: none;
+      margin-top: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    nav .menu ul li {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      background-color: #fff;
+      line-height: 40px;
+    }
+    nav .menu ul li a {
+      color: #6E93CA;
+    }
+    .tombol-menu {
+      display: flex;
+    }
+    .blog .area {
+      display: block;
+    }
+    .blog div.area div {
+      width: 100%;
+    }
+    .blog .area .gambar {
+      border-radius: 5px 5px 0px 0px;
+      height: 200px;
+    }
+    .support {
+      display: block;
+    }
+    .support div {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+  }
